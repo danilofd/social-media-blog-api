@@ -31,7 +31,6 @@ public class MessageDAO {
                 int message_id = (int) pkeyResultSet.getLong(1);
                 return new Message(message_id, message.getPosted_by(), message.getMessage_text(), message.getTime_posted_epoch());
             }
-
         }catch(SQLException e){
             System.out.println(e.getMessage());
         }
